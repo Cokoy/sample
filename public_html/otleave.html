@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Bootstrap core CSS -->
+    <link href="boostrap/css/bootstrap.min.css" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="stylesheet/header_sidebar.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/index.css">
+    
+   
+  </head>
+
+  <body>
+    <!-- Static header -->
+    <div class="header">
+  		<a href="index.html" class="logo">SAMPLE</a>
+	  </div>
+
+         <div class="topnav">
+          <a href="index.html" id="Dashboard">Home</a>
+          <a class="active" href="" id="Signature">OT/Leave</a>
+          <a href="ereport.html" id="Enrollment Report">Enrollment Report</a>
+        </div>
+        
+    
+        <div class="container">
+          <a class="navbar-brand">Number of Enrollee's per Rank</a>
+        </div>
+        
+        <!--display picture-->
+        <div class="container">
+    	<div class="row"></div>
+    	
+
+	      
+	      	<div class="col-lg-12">
+	           <form class="well" action="upload.html" method="post" enctype="multipart/form-data">
+				  <div class="form-group">
+				      
+				      <div style="margin-bottom: 10px" class="input-group">
+                                        <label for="email">NAME OF SENDER:</label>
+                                        <input id="login-username" type="text" class="form-control" name="sender" value="" placeholder="Lastname, Firstname" autofocus required>
+                      </div>
+                                
+              <div style="margin-bottom: 10px" class="input-group">
+                                        <label for="branch">BRANCH:</label>
+                                        <select id="login-user_level" type="text" class="form-control" name="branch" value="" placeholder="BRANCH" autofocus required>
+                                        <option>--Select--</option>
+                                        <option value="1">ALABANG</option>
+                                        <option value="2">ARLEGUI</option>
+                                        <option value="3">CARRIEDO</option>
+                                        </select>
+                      </div>  
+
+            <div>
+				    <p class="help-block">Upload Enrollment Report Excel file Month of May 2019.</p>
+				    </div>
+				    <label for="file">Select a file to upload</label>
+				    <input type="file" name="file">
+				    <p class="help-block">Only excel file with maximum size of 5 MB is allowed.</p>
+				  </div>
+				  <input type="submit" class="btn btn-lg btn-primary" value="Upload">
+
+				  <input type="button" class="btn btn-lg btn-primary" value="Cancel"  
+				   onclick="location.href = 'otleave.html';">
+
+				</form>
+			</div>
+	      </div>
+    </div> <!-- /container -->
+    
+  </body>
+</html>
+

@@ -1,0 +1,17 @@
+
+#main{
+    float:left;
+    width:100%;
+    background: linear-gradient(#F2F2F2);
+    padding-top: 50px;
+}
+#footer{
+    clear:both;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: darkgray;
+}
+#sidebar-left, #main{
+    min-height: 700px;      
+}
